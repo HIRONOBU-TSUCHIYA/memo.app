@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tutty's Accademy</title>
+    <link rel="icon" type="img/ping" href="img/favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+    <!-- この中に記述していく -->
+    <!-- ここから下にコードを書く -->
+    <header>
+        <div class="head">
+            <h1>
+                <a href="index.html"><img class="logo" src="img/header_logo.png" alt="ロゴ写真"></a>
+            </h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="problem.html">PROBLEM</a></li>
+                    <li><a href="news.html">SOLUTION</a></li>
+                    <li><a href="access.html">ACCESS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="yourtype.html">適性診断</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mainbg">
+        <img src="img/mainbg.jpg" alt="メイン写真">
+        <h1>～配車管理表～</h1>
+        <p>一元データを一時保存しよう!!</p>
+    </div>
+
+    <!-- /#header -->
+
+    <!-- コンテンツ部分 -->
+
+
+        <!-- コンタクト部分 -->
+        <div class="contact ">
+            <p>CONTACT</p>
+        </div>
+        <div class="setumeikai ">
+            <h3>仕事依頼ブース</h3>
+            <h4>下記のフォーマットに記入し「SAVE」ボタンを押してください。
+                <br> お気軽にオーダーください。お待ちしております。
+                <br></h4>
+        </div>
+
+        <!-- フォーム部分 -->
+        <div>
+            <input type="date" id="key">
+        </div>
+
+        <div class="form">
+            <form action="">
+                <table class="contact-table">
+                <tr>
+                <th class="contact-item">社名</th>
+                <td class="contact-body">
+                <input type="text" name="名前" class="form-text">
+                </td>
+                </tr>
+                <tr>
+                <th class="contact-item">集荷住所</th>
+                <td class="contact-body">
+                <input type="text" name="集荷日" class="form-text">
+                </td>
+                </tr>
+                <tr>
+                <th class="contact-item">配送先住所</th>
+                <td class="contact-body">
+                <input type="text" name="名前" class="form-text">
+                </td>
+                <tr></tr>
+                <th class="contact-item">荷物名</th>
+                <td class="contact-body">
+                <input type="text" name="nimotsu" class="form-text">
+                </td>
+                </tr>
+                <tr>
+                <th class="contact-item">希望車種</th>
+                <td class="contact-body">
+                <select name="選択" id="選択" class="form-select">
+                    <option>―　選択　―</option>
+                    <option>・大型車両【１４t】</option>
+                    <option>・中型車両【８ｔ車】</option>
+                    <option>・小型車両【２ｔ車】</option>
+                    <option>・その他</option>
+                </select>
+                </td>
+                </tr>
+                <tr>
+                <th class="contact-item">荷物の形状</th>
+                <td class="contact-body">
+                    <label class="why">
+                    <input type="checkbox" name="荷物">
+                    <span class="why1">パレット物【フォーク使用】</span>
+                    </label>
+                    <label class="why">
+                    <input type="checkbox" name="荷物">
+                    <span class="why1">バラもの【手積み手降ろし】</span>
+                    </label>
+                    <label class="why">
+                    <input type="checkbox" name="荷物">
+                    <span class="why1">引っ越しの荷物【作業あり】</span>
+                    </label>
+                    <label class="why">
+                    <input type="checkbox" name="荷物">
+                    <span class="why1">重要物【ゲート使用】</span>
+                    </label>
+                </td>
+                </tr>
+                <tr>
+                <th class="contact-item">詳細【その他特記事項】</th>
+                <td class="contact-body">
+                    <textarea name="詳細" class="form-textarea"></textarea>
+                </td>
+                </tr>
+                </table>
+            </form>
+        </div>
+        <input class="save" type="button" value="お見積り">
+        <h1>MemoPad</h1>
+        <textarea id="memo"></textarea>
+        <ul>
+        <li id="save">Save</li>
+        <li id="clear">Clear</li>
+        </ul>
+        <table id="list">
+    <!-- ここに追加データが挿入される -->
+        </table>
+
+        <!-- SEND部分-->
+        
+        <input class="save" type="button" value="save">
+        <input class="clear"  type="button" value="clear">
+        <table id="list"></table>
+
+    </main>
+    <table id="list">
+    </table>
+
+    <footer id="footer ">
+        <div class="footer ">
+            <p>copyrights since from 1976 Tutty's Academy SAITAMA All RIghts Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ここから上にコードを書く -->
+    <!-- この中に記述していく -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>
